@@ -1,0 +1,17 @@
+@import '~antd/dist/antd.css';
+
+html, body {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+    background-color: lightblue;
+
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    align-items: center;
+}
