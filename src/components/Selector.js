@@ -19,6 +19,7 @@ class Selector extends React.Component {
 		return (
 			<div>
 				<Select
+                    className="news__selector"
 					defaultValue=""
 					style={{ width: 200 }}
 					onChange={this.handleChange}
