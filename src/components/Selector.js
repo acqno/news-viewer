@@ -23,7 +23,7 @@ class Selector extends React.Component {
 					style={{ width: 200 }}
 					onChange={this.handleChange}
 				>
-					<Option value="the-new-york-times">New York Times</Option>
+					<Option value="bbc-news">BBC News</Option>
 					<Option value="the-globe-and-mail">The Globe and Mail</Option>
 					<Option value="bleacher-report">Bleacher Report</Option>
 					<Option value="national-geographic">National Geographic</Option>
