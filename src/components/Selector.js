@@ -7,13 +7,12 @@ import { Select } from 'antd';
 const Option  = Select.Option;
 
 class Selector extends React.Component {
-    constructor() {
-        super();
-        const Option = Select.Option;
-    }
 
-    handleChange(value) {
-        console.log(`selected ${value}`);
+    state = { news: null };
+
+    handleChange = (value) => {
+        this.setState({ news: value });
+        this.props.onSourceSelected(value);
     }
 
 	render() {
@@ -24,11 +23,11 @@ class Selector extends React.Component {
 					style={{ width: 200 }}
 					onChange={this.handleChange}
 				>
-					<Option value="New York Times">New York Times</Option>
-					<Option value="Globe and Mail">The Globe and Mail</Option>
-					<Option value="Bleacher Report">Bleacher Report</Option>
-					<Option value="National Geographic">National Geographic</Option>
-                    <Option value="Polygon">Polygon</Option>
+					<Option value="the-new-york-times">New York Times</Option>
+					<Option value="the-globe-and-mail">The Globe and Mail</Option>
+					<Option value="bleacher-report">Bleacher Report</Option>
+					<Option value="national-geographic">National Geographic</Option>
+                    <Option value="polygon">Polygon</Option>
 				</Select>
 			</div>
 		);
