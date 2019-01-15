@@ -3,11 +3,13 @@ import '../css/story.css';
 
 import { Select } from 'antd';
 
-
-const Option  = Select.Option;
+// This is the selector component
+// It renders the select input - prompting user to choose which news source they want to use
 
 class Selector extends React.Component {
 
+    // states
+    // news - currently selected news source
     state = { news: null };
 
     handleChange = (value) => {
@@ -34,5 +36,7 @@ class Selector extends React.Component {
 		);
 	}
 }
+
+const Option  = Select.Option;
 
 export default Selector;

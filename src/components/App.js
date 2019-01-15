@@ -1,12 +1,16 @@
 import React from 'react';
 
+// local imports 
 import '../css/story.css';
 import Selector from './Selector';
 import { getData } from '../api/newsapi';
 
 class App extends React.Component {
+    // states
+    // articles - array of articles that is pulled from api request
     state = { articles: [] };
 
+    // call back method that takes the selected news source and uses it to search for top results from api request
     onSourceSelected(newsValue) {
 
         console.log(newsValue);
