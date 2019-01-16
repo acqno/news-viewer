@@ -24,6 +24,7 @@ class App extends React.Component {
                 <div className="header">
                     <h1 className="header-title">Newsbox</h1>
                     <h3>Never miss a single headline from your favourite news sources</h3>
+                    <h4>Choose from a news source below: </h4>
                     <Selector onSourceSelected={this.onSourceSelected}/>
                 </div>
                 
