@@ -3,7 +3,8 @@
 html, body {
   margin: 0;
   box-sizing: border-box;
-  font-family: 'Roboto', sans-serif; }
+  font-family: 'Roboto', sans-serif;
+  background-color: #a5a5af; }
 
 .container {
   width: 100%;
@@ -32,5 +33,12 @@ html, body {
 
 .news__selector {
   margin-top: 1.5rem; }
+
+.news-card {
+  width: 100%;
+  margin: 0.8rem auto; }
+  @media (min-width: 40rem) {
+    .news-card {
+      width: 95%; } }
 
 /*# sourceMappingURL=story.css.map */

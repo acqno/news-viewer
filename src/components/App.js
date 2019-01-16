@@ -7,6 +7,7 @@ import { getData } from '../api/newsapi';
 import NewsList from './NewsList';
 
 
+
 class App extends React.Component {
     // states
     // articles - array of articles that is pulled from api request

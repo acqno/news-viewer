@@ -6,7 +6,7 @@ import NewsCard from './NewsCard';
 class NewsList extends React.Component {
     render() {
         return (
-            <div>
+            <div className="card-list__container">
                 <NewsCard/>
             </div>
         );
