@@ -4,6 +4,7 @@ import React from 'react';
 import '../css/story.css';
 import Selector from './Selector';
 import { getData } from '../api/newsapi';
+import NewsList from './NewsList';
 
 class App extends React.Component {
     // states
@@ -26,6 +27,10 @@ class App extends React.Component {
                     <h3>Never miss a single headline from your favourite news sources</h3>
                     <h4>Choose from a news source below: </h4>
                     <Selector onSourceSelected={this.onSourceSelected}/>
+                </div>
+
+                <div className="content">
+                    <NewsList></NewsList>
                 </div>
                 
             </div>
