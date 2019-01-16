@@ -1,3 +1,6 @@
+// This is the NewsCard component
+// it renders the details of each article into a simple card format 
+
 import React from 'react';
 import { Card, Row, Col } from 'antd';
 
