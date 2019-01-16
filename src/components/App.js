@@ -14,11 +14,12 @@ class App extends React.Component {
     state = { articles: [] };
 
     // call back method that takes the selected news source and uses it to search for top results from api request
-    onSourceSelected(newsValue) {
-
-        console.log(newsValue);
+    onSourceSelected = async (newsValue) => {
         
-        getData(newsValue);
+        const data = await getData(newsValue);
+        
+        this.setState({ articles: data });
+        
     }
 
     render() {
