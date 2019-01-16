@@ -1,16 +1,15 @@
 import React from 'react';
 
 import '../css/story.css';
-import NewsCard from './NewsCard';
 
-class NewsList extends React.Component {
+class NewsCard extends React.Component {
     render() {
         return (
             <div>
-                <NewsCard/>
+                News card
             </div>
         );
     };
 }
 
-export default NewsList;
+export default NewsCard;

@@ -6,6 +6,7 @@ import Selector from './Selector';
 import { getData } from '../api/newsapi';
 import NewsList from './NewsList';
 
+
 class App extends React.Component {
     // states
     // articles - array of articles that is pulled from api request
@@ -30,7 +31,9 @@ class App extends React.Component {
                 </div>
 
                 <div className="content">
-                    <NewsList></NewsList>
+                    <NewsList>
+
+                    </NewsList>
                 </div>
                 
             </div>
