@@ -3,7 +3,7 @@ import React from 'react';
 // local imports 
 import '../css/story.css';
 import Selector from './Selector';
-import { getData } from '../api/newsapi';
+import { KEY } from '../api/newsapi';
 import NewsList from './NewsList';
 
 
@@ -16,10 +16,14 @@ class App extends React.Component {
     // call back method that takes the selected news source and uses it to search for top results from api request
     onSourceSelected = async (newsValue) => {
         
-        const data = await getData(newsValue);
-        
-        this.setState({ articles: data });
-        
+        const result = await fetch(`https://newsapi.org/v2/top-headlines?sources=${newsValue}&apiKey=${KEY}`)
+            .then(response => response.json())
+            .then(parsedJSON => {
+                //console.log(parsedJSON.articles)
+                this.setState({ articles: parsedJSON.articles})
+                console.log(this.state.articles)
+            })
+            .catch(error => console.log('parsing failed', error))
     }
 
     render() {
