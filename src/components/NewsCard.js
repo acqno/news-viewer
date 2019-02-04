@@ -20,7 +20,6 @@ const NewsCard = props => {
           </Col>
         </Row>
         <p>{props.description}</p>
-        <a href="#">link to article</a>
       </Card>
     </div>
   );

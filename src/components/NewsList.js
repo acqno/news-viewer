@@ -9,15 +9,8 @@ import "../css/story.css";
 import NewsCard from "./NewsCard";
 
 class NewsList extends React.Component {
-  
-  // render method that takes the array of articles passed from App and passes the data into NewsCard component to be rendered in a list
-  // renderList() {
-  //   this.props.articles.map(article => {
-  //     console.log(article);
-  //     return article;
-  //   })
-  // }
 
+  // 
   render() {
     return (
     <div className="card-list__container">
