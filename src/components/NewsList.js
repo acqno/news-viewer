@@ -9,22 +9,31 @@ import "../css/story.css";
 import NewsCard from "./NewsCard";
 
 class NewsList extends React.Component {
-  state = { newsArticles: [] };
-
-  componentDidMount() {
-    this.setState({ newsArticles: this.props.articles });
-  }
-
-  // render method that will return the list of articles in card format
-
-  renderArticles() {
-    this.state.newsArticles.map(article => {
-      console.log(article);
-    });
-  }
+  
+  // render method that takes the array of articles passed from App and passes the data into NewsCard component to be rendered in a list
+  // renderList() {
+  //   this.props.articles.map(article => {
+  //     console.log(article);
+  //     return article;
+  //   })
+  // }
 
   render() {
-    return <div className="card-list__container">{this.renderArticles}</div>;
+    return (
+    <div className="card-list__container">
+      {this.props.articles.map(article => {
+        console.log(article);
+        return(
+          <NewsCard 
+            key={article.source.id}
+            title={article.title}
+            source={article.source.name}
+            date={article.publishedAt}
+            description={article.description}
+          />
+        )
+      })}
+    </div>);
   }
 }
 

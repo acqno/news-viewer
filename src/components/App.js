@@ -17,7 +17,7 @@ class App extends React.Component {
     )
       .then(response => response.json())
       .then(result => {
-        //console.log(parsedJSON.articles)
+
         this.setState({ news: result.articles });
         //console.log(this.state.news);
       })

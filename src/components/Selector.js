@@ -10,10 +10,10 @@ class Selector extends React.Component {
 
     // states
     // news - currently selected news source
-    state = { news: null };
+    state = { source: null };
 
     handleChange = (value) => {
-        this.setState({ news: value });
+        this.setState({ source: value });
         this.props.onSourceSelected(value);
     }
 
