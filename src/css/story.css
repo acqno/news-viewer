@@ -50,5 +50,7 @@ body {
     transform: scale(1.02);
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.4);
     cursor: pointer; } }
+.main-content {
+  padding-left: 1rem; }
 
 /*# sourceMappingURL=story.css.map */
