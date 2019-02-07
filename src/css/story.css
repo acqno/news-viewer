@@ -1,9 +1,10 @@
 @import url(~antd/dist/antd.css);
 @import url("https://fonts.googleapis.com/css?family=Assistant|Roboto");
-html, body {
+html,
+body {
   margin: 0;
   box-sizing: border-box;
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   background-color: #a5a5af; }
 
 .container {
@@ -19,14 +20,15 @@ html, body {
   flex-direction: column;
   justify-items: center;
   align-items: center; }
-  .header h3, .header h4 {
+  .header h3,
+  .header h4 {
     color: white; }
   .header h4 {
     margin-top: 1.5rem; }
 
 .header-title {
   color: white;
-  font-family: 'Assistant', 'Roboto', sans-serif;
+  font-family: "Assistant", "Roboto", sans-serif;
   font-size: 4rem;
   letter-spacing: 4px;
   margin: 0 auto; }
@@ -41,11 +43,12 @@ html, body {
     .news-card {
       width: 95%; } }
 
-.news-card:hover {
-  -webkit-transform: scale(1.2);
-  -ms-transform: scale(1.2);
-  transform: scale(1.02);
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.4);
-  cursor: pointer; }
+@media (min-width: 40rem) {
+  .news-card:hover {
+    -webkit-transform: scale(1.2);
+    -ms-transform: scale(1.2);
+    transform: scale(1.02);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.4);
+    cursor: pointer; } }
 
 /*# sourceMappingURL=story.css.map */
