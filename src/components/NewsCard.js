@@ -9,7 +9,7 @@ import "../css/story.css";
 
 class NewsCard extends React.Component {
   render() {
-    const { Header, Footer, Sider, Content } = Layout;
+    const { Sider, Content } = Layout;
 
     return (
       <div>
@@ -22,7 +22,10 @@ class NewsCard extends React.Component {
           <Layout>
             <Sider className="sider-content">
               <div className="sider-image__container">
-                <img src={this.props.image} />
+                <img
+                  src={this.props.image}
+                  alt={`${this.props.key} thumbnail`}
+                />
               </div>
             </Sider>
             <Layout>
