@@ -80,3 +80,13 @@ body {
 .main-content {
   padding-left: 1rem;
 }
+
+.sider-image__container {
+  width: 11rem;
+  height: auto;
+
+  img {
+    max-width: 100%;
+    max-height: 100%;
+  }
+}

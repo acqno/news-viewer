@@ -20,7 +20,11 @@ class NewsCard extends React.Component {
           }}
         >
           <Layout>
-            <Sider className="sider-content">Sider</Sider>
+            <Sider className="sider-content">
+              <div className="sider-image__container">
+                <img src={this.props.image} />
+              </div>
+            </Sider>
             <Layout>
               <Content className="main-content">
                 <h1>{this.props.title}</h1>
