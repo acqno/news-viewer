@@ -6,6 +6,7 @@ import { Card, Row, Col } from "antd";
 
 import "../css/story.css";
 
+
 const NewsCard = props => {
 
   return (
@@ -13,10 +14,10 @@ const NewsCard = props => {
       <Card className="news-card" onClick={() => {window.open(props.link)} }>
         <h1>{props.title}</h1>
         <Row gutter={16}>
-          <Col className="gutter-row" span={3}>
+          <Col className="gutter-row" span={5}>
             <h4>{props.source}</h4>
           </Col>
-          <Col className="gutter-row" span={5}>
+          <Col className="gutter-row" span={8}>
             <h4>{props.date}</h4>
           </Col>
         </Row>
