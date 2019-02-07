@@ -23,6 +23,7 @@ class NewsList extends React.Component {
             source={article.source.name}
             date={article.publishedAt}
             description={article.description}
+            link={article.url}
           />
         )
       })}

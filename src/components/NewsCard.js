@@ -7,9 +7,10 @@ import { Card, Row, Col } from "antd";
 import "../css/story.css";
 
 const NewsCard = props => {
+
   return (
     <div>
-      <Card className="news-card">
+      <Card className="news-card" onClick={() => {window.open(props.link)} }>
         <h1>{props.title}</h1>
         <Row gutter={16}>
           <Col className="gutter-row" span={3}>
