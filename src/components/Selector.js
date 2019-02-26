@@ -1,42 +1,41 @@
-import React from 'react';
-import '../css/story.css';
+import React from "react";
+import "../css/story.css";
 
-import { Select } from 'antd';
+import { Select } from "antd";
 
 // This is the selector component
 // It renders the select input - prompting user to choose which news source they want to use
 
 class Selector extends React.Component {
+  // states
+  // news - currently selected news source
+  state = { source: null };
 
-    // states
-    // news - currently selected news source
-    state = { source: null };
+  handleChange = value => {
+    this.setState({ source: value });
+    this.props.onSourceSelected(value);
+  };
 
-    handleChange = (value) => {
-        this.setState({ source: value });
-        this.props.onSourceSelected(value);
-    }
-
-	render() {
-		return (
-			<div>
-				<Select
-                    className="news__selector"
-					defaultValue=""
-					style={{ width: 200 }}
-					onChange={this.handleChange}
-				>
-					<Option value="bbc-news">BBC News</Option>
-					<Option value="the-globe-and-mail">The Globe and Mail</Option>
-					<Option value="bleacher-report">Bleacher Report</Option>
-					<Option value="national-geographic">National Geographic</Option>
-                    <Option value="polygon">Polygon</Option>
-				</Select>
-			</div>
-		);
-	}
+  render() {
+    return (
+      <div>
+        <Select
+          className="news__selector"
+          defaultValue=""
+          style={{ width: 200 }}
+          onChange={this.handleChange}
+        >
+          <Option value="bbc-news">BBC News</Option>
+          <Option value="the-globe-and-mail">The Globe and Mail</Option>
+          <Option value="bleacher-report">Bleacher Report</Option>
+          <Option value="national-geographic">National Geographic</Option>
+          <Option value="polygon">Polygon</Option>
+        </Select>
+      </div>
+    );
+  }
 }
 
-const Option  = Select.Option;
+const Option = Select.Option;
 
 export default Selector;

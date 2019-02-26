@@ -1,5 +1,5 @@
 @import url(~antd/dist/antd.css);
-@import url("https://fonts.googleapis.com/css?family=Assistant|Roboto");
+@import url("https://fonts.googleapis.com/css?family=Dancing+Script|Roboto");
 html,
 body {
   margin: 0;
@@ -19,17 +19,20 @@ body {
   display: flex;
   flex-direction: column;
   justify-items: center;
-  align-items: center; }
-  .header h3,
+  align-items: center;
+  color: white; }
+  .header h3 {
+    font-family: "Roboto", cursive;
+    font-size: 1.2rem;
+    color: inherit; }
   .header h4 {
-    color: white; }
-  .header h4 {
-    margin-top: 1.5rem; }
+    margin-top: 0.5rem;
+    color: inherit; }
 
 .header-title {
   color: white;
-  font-family: "Assistant", "Roboto", sans-serif;
-  font-size: 4rem;
+  font-family: "Dancing Script", cursive;
+  font-size: 4.3rem;
   letter-spacing: 4px;
   margin: 0 auto; }
 
